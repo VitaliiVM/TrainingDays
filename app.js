@@ -1,12 +1,12 @@
-const getRandEvent = () => {
-    const random = Math.floor(Math.random() * 3);
-    if (random === 0) {
-        return 'Marathon';
-    } else if (random === 1) {
-        return 'Triathlon';
-    } else if (random === 2) {
-        return 'Pentathlon';
-    }
+const getRandChoice = (choices) => {
+    
+    
+    
+    return choices[getRandom(choices.length)];
+   
+};
+const getRandom = n => {
+    return Math.floor(Math.random() * n);
 };
 
 const getTrainingDays = event => {
@@ -31,14 +31,20 @@ const logTime = (name, days) => {
     console.log(`${name}'s time to train is: ${days} days`);
 };
 
-const event = getRandEvent();
+const events = ['Triathlon', 'Marathon', 'Pentathlon'];
+
+const event = getRandChoice(events);
 const days = getTrainingDays(event);
 
 let name = 'Nala';
 logEvent(name, event);
 logTime(name, days);
 
-const event2 = getRandEvent();
+
+const event2 = getRandChoice(events);
+
+
+
 const days2 = getTrainingDays(event2);
 const name2 = 'Warren';
 
