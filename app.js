@@ -21,7 +21,7 @@ const test = {
         {days: 200, sportEvent: 'Pentathlon'},
     ]
 }
-// console.log(getRandChoice(test))
+
 const event = getRandChoice(test);
 
 let name = 'Nala';
