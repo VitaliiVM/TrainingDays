@@ -7,7 +7,7 @@ const getRandom = n => {
 };
 
 const logEvent = (name, competition) => {
-    console.log(`${name}'s event is: ${competition.nameOf}`);
+    console.log(`${name}'s event is: ${competition.sportEvent}`);
 };
 
 const logTime = (name, competition) => {
@@ -15,9 +15,9 @@ const logTime = (name, competition) => {
 };
 
 const events = [
-    {days: 50, nameOf: 'Triathlon'},
-    {days: 100, nameOf: 'Marathon'},
-    {days: 200, nameOf: 'Pentathlon'}
+    {days: 50, sportEvent: 'Triathlon'},
+    {days: 100, sportEvent: 'Marathon'},
+    {days: 200, sportEvent: 'Pentathlon'}
 ];
 
 const event = getRandChoice(events);
