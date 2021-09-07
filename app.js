@@ -1,5 +1,5 @@
 const getRandChoice = (choices) => {
-    return choices[getRandom(choices.length)];
+    return choices.eventOf[getRandom(choices.eventOf.length)];
 };
 
 const getRandom = n => {
@@ -20,7 +20,15 @@ const events = [
     {days: 200, sportEvent: 'Pentathlon'}
 ];
 
-const event = getRandChoice(events);
+const test = {
+    eventOf: [
+        {days: 50, sportEvent: 'Triathlon'},
+        {days: 100, sportEvent: 'Marathon'},
+        {days: 200, sportEvent: 'Pentathlon'},
+    ]
+}
+// console.log(getRandChoice(test))
+const event = getRandChoice(test);
 
 let name = 'Nala';
 logEvent(name, event);
@@ -29,3 +37,4 @@ logTime(name, event);
 const name2 = 'Warren';
 logEvent(name2, event);
 logTime(name2, event);
+
