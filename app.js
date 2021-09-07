@@ -14,12 +14,6 @@ const logTime = (name, competition) => {
     console.log(`${name}'s time to train is: ${competition.days} days`);
 };
 
-const events = [
-    {days: 50, sportEvent: 'Triathlon'},
-    {days: 100, sportEvent: 'Marathon'},
-    {days: 200, sportEvent: 'Pentathlon'}
-];
-
 const test = {
     eventOf: [
         {days: 50, sportEvent: 'Triathlon'},
